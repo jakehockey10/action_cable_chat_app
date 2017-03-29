@@ -37,7 +37,7 @@ Rails.application.configure do
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
   config.action_cable.url = 'wss://limitless-chamber-47297.herokuapp.com/cable'
-  config.action_cable.allowed_request_origins = [ 'https://limitless-chamber-47297.herokuapp.com', 'localhost:4200' ]
+  config.action_cable.allowed_request_origins = [ 'https://limitless-chamber-47297.herokuapp.com', 'http://localhost:4200' ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   config.force_ssl = true
