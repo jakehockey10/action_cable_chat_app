@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
 
   mount ActionCable.server, at: '/cable'
+
+  post 'authenticate', to: 'authentication#authenticate'
 end
