@@ -3,7 +3,7 @@ class AuthenticationController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def authenticate
-    command = AuthenticateUser.call(params[:email], params[:password])
+    command = AuthenticateUser.call(params[:username], params[:password])
 
     if command.success?
       render json: { auth_token: command.result }
